@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        
+        <link rel="stylesheet" type="text/css" href="lib/css/slick.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+                 <meta name="msapplication-tap-highlight" content="no" />
+          <link rel="stylesheet" type="text/css" href="grooveFlatIcons/flaticon.css" />
+          <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title></title>
+    </head>
+    <body>
+           <!--  <div data-role="popup" id="loadingData" data-overlay-theme="b" class="ui-icon flaticon-loading homeIcon" data-theme="b" data-dismissible="false" style="max-width:400px;"></div>    -->
+         <div id="menu" style="display: none;">
+		<div data-role="header" class="grooveHeader ui-header ui-bar-inherit" role="banner">
+			<h1 class="ui-title" role="heading" aria-level="1">Grooving</h1>
+		</div>
+		<ul data-role="listview" data-inset="true" class="menuList">
+		    <li class="active"onclick="showPage('1')"><i class="flaticon-smile1"></i><a href="#">Most Popular</a></li>
+                    <li class="" onclick="showPage('2')"><i class="flaticon-smile1"></i><a href="#">Food & Drinks</a></li>
+                    <li class="" onclick="showPage('3')"><i class="flaticon-smile1"></i><a href="#">Hanning Out</a></li>
+                    <li class="" onclick="showPage('4')"><i class="flaticon-smile1"></i><a href="#">Sporty Stuff</a></li>
+                    <li class=""  onclick="showPage('5')"><i class="flaticon-smile1"></i><a href="#">Deals</a></li>
+                    <li class="" onclick="showPage('6')"><i class="flaticon-smile1"></i><a href="#">Healthy</a></li>
+                </ul>
+                <ul data-role="listview" data-inset="true" class=" menuSettingList">
+		    <li class="active"onclick="nextPage('#login','#setting')"><i class="flaticon-settings20"></i><a href="#">Setting</a></li>
+                </ul>
+	</div>
+        <div data-role="page" id="login" style="padding-bottom: 72px !important;">
+		<div data-role="header" class="grooveHeader" >
+		<h1>Groove</h1>
+		</div><!-- /header -->
+	        <div data-role="content">
+    		<div class="having-fun" align="center">
+                       <div style=""><div class="imgFrame1" style="background:url('img/1.png') no-repeat center;"></div></div>
+			<div style=""><div class="imgFrame1" style="background:url('img/2.png') no-repeat center;"></div></div>
+			<div style=""><div class="imgFrame1" style="background:url('img/3.png') no-repeat center;"></div></div>
+			<div style=""><div class="imgFrame1" style="background:url('img/4.png') no-repeat center;"></div></div>
+			<div style=""><div class="imgFrame1" style="background:url('img/5.png') no-repeat center;"></div></div>
+		</div>
+    			
+    		</div>
+               <div data-role="footer" data-position="fixed" class="grooveFooter ui-fixed-hidden" data-tap-toggle="false">
+                                      <div class="btn1 loginWithFb"onclick="nextPage('#login','#home')">
+		                         <i class="flaticon-facebook37"></i>
+					  Login with facebook
+				        </div>
+	        Groove uses Facebook to show where is happening
+	       </div>
+    	</div>
+         <div data-role="page" id="home" style="padding-bottom: 72px !important;">
+		<div data-role="header" class="grooveHeader ">
+		<h1>Whats Hot</h1><i class="flaticon-menu53 showMenu"></i>
+		</div><!-- /header -->
+	        <div data-role="content" class="homePage">
+    			<div id="homeSlider" class="homeTopSlider">
+                  <!--  slide  1  start-->
+                             <div style="" class="hiddenshow mainframe">
+                                <div class="trannparentBtn"style="left:0px;">
+		                         <i class="flaticon-smile1"></i>
+					  Going off!
+				 </div>
+                                <div class="trannparentBtn"style="right:0px;">
+		                         Friends There<i class="flaticon-facebook37"></i>
+				 </div>
+    				<div class="imgFrame2" style="background:url('img/1.png') no-repeat center;"></div>
+    				
+	    			<div class="divCenter">
+				                 <label style="font-size:19px;font-style:bold;">Kirribilli restaurant <label>
+				                 <p style="font-size:14px;">2/21 Broughton Street, Kirribilli (off Burton Street).</p>
+				                 <p style="font-size:13px;">Happy Hour all Night Long! Come by for our specialty Tacos and enjoy live music by Los Cubanos</p> 
+		                </div>
+				<div style="margin-bottom:19px;">
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                          Food
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Drinks
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Live Music
+				    </div>
+				    <div class="homeSticker flaticon-smile1"><br>
+		                         Hanging Out
+				    </div>
+                                    <div class="homeSticker flaticon-smile1"><br>
+		                         Hot!!!
+				    </div>
+		                </div>
+				<div class=""style="">
+				        <div class=""style="width:50%;float:left;">
+		                         <div onclick="nextPage('#login','#map')" class="btn1"><i class="flaticon-cursor6"></i>
+					  Directions
+					  </div>
+				        </div>
+				        <div class=""style="width:50%;float:right;">
+		                         <div onclick="" class="btn1"><i class="flaticon-envelope32"></i>
+					  Tell People
+					  </div>
+				        </div>
+		                </div>
+                         </div>
+              <!--  slide  1  end-->
+              <!--  slide  2  start-->
+                          <div style="" class="hiddenshow mainframe">
+                               <div class="trannparentBtn"style="left:0px;">
+		                         <i class="flaticon-smile1"></i>
+					  Going off!
+				 </div>
+                                <div class="trannparentBtn"style="right:0px;">
+		                          Friends There<i class="flaticon-facebook37"></i>
+				 </div>
+    				<div class="imgFrame2" style="background:url('img/2.png') no-repeat center;"></div>
+    				
+	    			<div class="divCenter">
+				                 <label style="font-size:19px;font-style:bold;">Whitewater Restaurant<label>
+				                 <p style="font-size:14px;">35 S Steyne Manly NSW 2095, Australia</p>
+				                 <p style="font-size:13px;">Happy Hour all Night Long! Come by for our specialty Tacos and enjoy live music by Los Cubanos</p> 
+		                </div>
+				<div style="margin-bottom:19px;">
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                          Food
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Drinks
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Live Music
+				    </div>
+				    <div class="homeSticker flaticon-smile1"><br>
+		                         Hanging Out
+				    </div>
+                                    <div class="homeSticker flaticon-smile1"><br>
+		                         Hot!!!
+				    </div>
+		                </div>
+				<div class=""style="">
+				        <div class=""style="width:50%;float:left;">
+		                         <div onclick="nextPage('#login','#map')" class="btn1"><i class="flaticon-cursor6"></i>
+					  Directions
+					  </div>
+				        </div>
+				        <div class=""style="width:50%;float:right;">
+		                         <div onclick="" class="btn1"><i class="flaticon-envelope32"></i>
+					  Tell People
+					  </div>
+				        </div>
+		                </div>
+                         </div>
+               <!--  slide  2  end-->
+
+               <!--  slide  3  start-->
+                         <div style="" class="hiddenshow mainframe">
+				<div class="trannparentBtn"style="left:0px;">
+		                         <i class="flaticon-smile1"></i>
+					  Going off!
+				 </div>
+                                <div class="trannparentBtn"style="right:0px;">
+		                          Friends There<i class="flaticon-facebook37"></i>
+				 </div>
+    				<div class="imgFrame2" style="background:url('img/3.png') no-repeat center;"></div>
+    				
+	    			<div class="divCenter">
+				                <label style="font-size:19px;font-style:bold;">Kirribilli restaurant <label>
+				                 <p style="font-size:14px;">2/21 Broughton Street, Kirribilli (off Burton Street).</p>
+				                 <p style="font-size:13px;">Happy Hour all Night Long! Come by for our specialty Tacos and enjoy live music by Los Cubanos</p> 
+		                </div>
+				<div style="margin-bottom:19px;">
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                          Food
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Drinks
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Live Music
+				    </div>
+				    <div class="homeSticker flaticon-smile1"><br>
+		                         Hanging Out
+				    </div>
+                                    <div class="homeSticker flaticon-smile1"><br>
+		                         Hot!!!
+				    </div>
+		                </div>
+				<div class=""style="">
+				        <div class=""style="width:50%;float:left;">
+		                         <div onclick="nextPage('#login','#map')" class="btn1"><i class="flaticon-cursor6"></i>
+					  Directions
+					  </div>
+				        </div>
+				        <div class=""style="width:50%;float:right;">
+		                         <div onclick="" class="btn1"><i class="flaticon-envelope32"></i>
+					  Tell People
+					  </div>
+				        </div>
+		                </div>
+                         </div>
+               <!--  slide  3  end-->
+               <!--  slide  4  start-->
+                          <div style="" class="hiddenshow mainframe">
+				<div class="trannparentBtn"style="left:0px;">
+		                         <i class="flaticon-smile1"></i>
+					  Going off!
+				 </div>
+                                <div class="trannparentBtn"style="right:0px;">
+		                          Friends There<i class="flaticon-facebook37"></i>
+				 </div>
+    				<div class="imgFrame2" style="background:url('img/4.png') no-repeat center;"></div>
+    				
+	    			<div class="divCenter">
+				                 <label style="font-size:19px;font-style:bold;">Whitewater Restaurant<label>
+				                 <p style="font-size:14px;">35 S Steyne Manly NSW 2095, Australia</p>
+				                 <p style="font-size:13px;">Happy Hour all Night Long! Come by for our specialty Tacos and enjoy live music by Los Cubanos</p> 
+		                </div>
+				<div style="margin-bottom:19px;">
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                          Food
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Drinks
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Live Music
+				    </div>
+				    <div class="homeSticker flaticon-smile1"><br>
+		                         Hanging Out
+				    </div>
+                                    <div class="homeSticker flaticon-smile1"><br>
+		                         Hot!!!
+				    </div>
+		                </div>
+				<div class=""style="">
+				        <div class=""style="width:50%;float:left;">
+		                         <div onclick="nextPage('#login','#map')" class="btn1"><i class="flaticon-cursor6"></i>
+					  Directions
+					  </div>
+				        </div>
+				        <div class=""style="width:50%;float:right;">
+		                         <div onclick="" class="btn1"><i class="flaticon-envelope32"></i>
+					  Tell People
+					  </div>
+				        </div>
+		                </div>
+                         </div>
+               <!--  slide  4  end-->
+               <!--  slide  5  start-->
+                         <div style="" class="hiddenshow mainframe">
+				<div class="trannparentBtn"style="left:0px;">
+		                         <i class="flaticon-smile1"></i>
+					  Going off!
+				 </div>
+                                <div class="trannparentBtn"style="right:0px;">
+		                          Friends There<i class="flaticon-facebook37"></i>
+				 </div>
+    				<div class="imgFrame2" style="background:url('img/5.png') no-repeat center;"></div>
+    				
+	    			<div class="divCenter">
+				                <label style="font-size:19px;font-style:bold;">Kirribilli restaurant <label>
+				                 <p style="font-size:14px;">2/21 Broughton Street, Kirribilli (off Burton Street).</p>
+				                 <p style="font-size:13px;">Happy Hour all Night Long! Come by for our specialty Tacos and enjoy live music by Los Cubanos</p> 
+		                </div>
+				<div style="margin-bottom:19px;">
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                          Food
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Drinks
+				    </div>
+		                    <div class="homeSticker flaticon-smile1"><br>
+		                         Live Music
+				    </div>
+				    <div class="homeSticker flaticon-smile1"><br>
+		                         Hanging Out
+				    </div>
+                                    <div class="homeSticker flaticon-smile1"><br>
+		                         Hot!!!
+				    </div>
+		                </div>
+				<div class=""style="">
+				        <div class=""style="width:50%;float:left;">
+		                         <div onclick="nextPage('#login','#map')" class="btn1"><i class="flaticon-cursor6"></i>
+					  Directions
+					  </div>
+				        </div>
+				        <div class=""style="width:50%;float:right;">
+		                         <div onclick="" class="btn1"><i class="flaticon-envelope32"></i>
+					  Tell People
+					  </div>
+				        </div>
+		                </div>
+                         </div>
+               <!--  slide  5  end-->
+                    </div>
+    	      </div>
+                <div data-role="footer" data-position="fixed" class="grooveFooter ui-fixed-hidden " style="" data-tap-toggle="false">
+		         <div class="homeFooterFrame "style="width:100%;font-size:14px;">
+		       </div>
+	        </div>
+           
+    	</div>
+<!-- end home  -->
+    	 <div data-role="page" id="setting">
+		<div data-role="header" class="grooveHeader">
+		<h1>Settings</h1><i class="flaticon-arrow395" onclick="nextPage('#login','#home')"></i>
+		</div><!-- /header -->
+	        <div data-role="content">
+                           <div style="" class="settingList">Account</div>
+					<div class="margin-shadow-try" onclick="">
+						Personal Info<i class="flaticon-next15 profile-list-Icon"></i>
+					</div>
+					
+					<div class="margin-shadow-try">
+						AutoLogin<i class="profile-list-Icon"><select id="flip-2" data-role="slider" >
+									        <option value="off"></option>
+									        <option value="on" selected="selected"></option>
+					</select></i></div>
+					<div class="margin-shadow-try" onclick="">
+						Invite Friends (3/5 Invited) <i class="flaticon-next15 profile-list-Icon"></i>
+					</div>
+			
+			<div style="" class="settingList">Push Notifications</div>
+					<div class="margin-shadow-try">
+						Notifications  from friends<i class="profile-list-Icon"><select id="flip-1" data-role="slider" >
+									        <option value="off"></option>
+									        <option value="on" selected="selected"></option>
+					</select></i></div>
+					<div class="margin-shadow-try">
+						Going Off Notifications<i class="profile-list-Icon"><select id="flip-2" data-role="slider" >
+									        <option value="off"></option>
+									        <option value="on" selected="selected"></option>
+					</select></i></div>
+					<div class="margin-shadow-try">
+						Special Deals Notifications<i class="profile-list-Icon"><select id="flip-2" data-role="slider" >
+									        <option value="off"></option>
+									        <option value="on" selected="selected"></option>
+					</select></i></div>
+			<div style="" class="settingList">Get Help</div>
+					<div class="margin-shadow-try" onclick="">
+						About Groove<i class="flaticon-next15 profile-list-Icon"></i>
+					</div>
+					<div class="margin-shadow-try" onclick="">
+						Contact Us <i class="flaticon-next15 profile-list-Icon"></i>
+					</div>
+		       </div>
+
+
+    		</div>
+    	</div>
+    	 <div data-role="page" id="map">
+		<div data-role="header" class="grooveHeader">
+		<h1>Directions</h1><i class="flaticon-arrow395" onclick="nextPage('#login','#home')"></i>
+		</div><!-- /header -->
+	        <div data-role="content" class="mapArea">
+		  <!--  <div style="width:100%;">
+			    <select id="mode" onchange="displayDirection();">
+			      <option value="DRIVING">Driving</option>
+			      <option value="WALKING">Walking</option>
+			      <option value="BICYCLING">Bicycling</option>
+			    </select>
+	                </div> 
+                  --> 
+                    <div id="map-canvas" style="height:100%"></div>     
+
+    		</div>
+               <div data-role="footer" data-position="fixed" class="grooveFooter" onclick="displayDirection()"  data-tap-toggle="false">
+	        <p style="margin-top:5px;" id="distanceInfo">Distance up to Destination in km</p>
+	       </div> 
+    	</div>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->  
+        <!--  map link  -->
+		<script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="lib/js/slick.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+    </body>
+</html>

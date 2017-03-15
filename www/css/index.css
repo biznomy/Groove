@@ -1,0 +1,352 @@
+.mainframe{
+margin-top:24px;margin-bottom:25px;
+}
+.trannparentBtn{
+position:absolute;top:60;
+color:#fff;
+background-color:black;
+border:0px !important;
+padding:10px;
+opacity:.4;
+text-shadow: 0 1px 1px #000;
+}
+.trannparentBtn .flaticon-smile1:before{
+content: "\e009";
+font-size:17px !important;
+}
+.trannparentBtn .flaticon-facebook37:before {
+content: "\e003";
+font-size:17px !important;
+}
+.divCenter{
+width:95%;height:25%;margin:auto;margin-top:20px;
+}
+.loginWithFb{
+width:50%;
+height:100%;
+margin:auto;
+background-color:#2e64fe;
+color:#fff;
+text-shadow: 0 1px 1px #000 !important;
+border-radius:12px;
+margin-top:5px;
+}
+
+li .flaticon-smile1,li .flaticon-settings20{
+position:absolute;
+text-shadow: 0 1px 1px #000;
+color:#fff !important;
+padding-top:1.5px;
+}
+.menuList li{
+border-bottom: solid #333 1px;
+box-shadow: 0 1px 0 #727272;
+padding-top:6px;
+padding-bottom:6px;
+}
+.menuSettingList li{
+padding-top:6px;
+padding-bottom:6px;
+}
+#menu ul li a:link{
+margin-left: 22px;
+border-bottom:0px !important;
+box-shadow: 0px 0px 0px !important;
+}
+.btn1{
+margin:auto;width:83%;text-align:center;padding:10px;border:1px solid black;margin-bottom:8px;font-size:15px;
+}
+.flaticon-menu53,.flaticon-arrow395{
+position:absolute;
+top:5px;
+left:8px;
+}
+.mapArea{
+position:absolute;
+  width:100%;
+top:38px;
+bottom:0;
+}
+
+.ui-select {
+margin-top: 0px !important;
+margin-bottom:0px !important;
+}
+.homePage .slick-dots {
+top: 2px !important;
+}
+div.ui-slider-switch{
+top: -7px;
+width:4em !important;
+height:30px !important;
+}
+.ui-slider-switch .ui-btn.ui-slider-handle{
+margin: 0px 0 0 -15px;
+}
+.ui-page-theme-a .ui-btn:focus{
+-webkit-box-shadow: 0 0 0px #38c !important;
+-moz-box-shadow: 0 0 0px #38c !important;
+box-shadow: 0 0 0px #38c !important;
+}
+div.ui-slider {
+margin: 0;
+padding: 0;
+}
+
+a{
+text-decoration:none;
+}
+
+.margin-shadow-try{
+        font-size:12px !important;
+        color:#727272;
+	padding:12px;	
+	overflow-x: hidden;
+	background-color:#fff;
+	margin-bottom:3px !important;
+       -webkit-box-shadow:1px 1px 5px rgba(60, 55, 55, 0.3)!important;
+	-moz-box-shadow:1px 1px 5px rgba(60, 55, 55, 0.3)!important;
+	-o-box-shadow:1px 1px 5px rgba(60, 55, 55, 0.3)!important;
+	box-shadow:1px 1px 5px rgba(60, 55, 55, 0.3)!important;
+}
+.ui-page-theme-a a{
+font-weight:0px !important;
+}
+.profile-list-Icon{
+	position: absolute;
+	right:15px;
+}
+.ui-slider-track.ui-corner-all {
+-webkit-border-radius: 1.3125em /*{global-radii-buttons}*/;
+border-radius: 1.3125em /*{global-radii-buttons}*/;
+}
+.ui-footer-fixed.ui-fixed-hidden {
+bottom: 0;
+padding-bottom: 5px !important;
+}
+.grooveFooter .slick-slider{
+margin-bottom:0px !important;
+}
+.homeSticker{
+width:20%;
+height:65px;
+float:left;
+text-align:center;
+padding-top:5px;
+}
+button.ui-btn{
+width:90% !important;
+}
+.ui-btn.ui-corner-all{
+-webkit-border-radius: 0em !important;
+border-radius: 0em !important;
+}
+.menuSettingList{
+position:absolute;
+bottom:1px;
+}
+.ui-content {
+padding:0px !important;
+}
+.imgFrame1{
+height:0px;
+width:100%;
+}
+.imgFrame2{
+height:250px;
+width:100%;
+}
+
+.ui-btn-left, .ui-btn-right {
+top: 1px !important;
+left:0px;
+}
+.grooveHeader{
+height:40px;
+background-color: #2e64fe !important;
+color:#fff !important;
+font-size:14px;
+font-style:bold;
+text-shadow: 0 1px 1px #000 !important;
+}
+.grooveFooter{
+padding-top:8px;
+background-color: #fff !important;
+color:#727272 !important;
+font-style:bold;
+text-align:center;
+text-shadow: 0 1px 1px #fff !important;
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:none;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+/* menu css  */
+#menu {
+	background-color: #5a5959;
+	float: left;
+	height: 100%;
+	width: 245px;
+}
+#menu h3 {
+	font-family: arial;
+	font-size: 12px;
+	color: #fff;
+	margin: 0;
+	padding: 4px 0 4px 10px;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(5%,rgba(90,89,89,1)),color-stop(85%,rgba(66,65,65,1)));
+	border-top: solid #6b6b6b 1px;
+	border-bottom: solid #3d3d3d 1px;
+	text-shadow: 0 -1px 1px #333;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	width: inherit;
+}
+#menu ul li a:link,
+#menu ul li a:visited {
+	border-bottom: solid #333 1px;
+	box-shadow: 0 1px 0 #727272;
+	color: #fff;
+	display: block;
+	font-family: arial;
+	font-size: 14px;
+	padding: 10px 0 10px 10px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #000;
+	width: 90%;
+}
+.ui-body-c {
+	background-color: #fff;
+	line-height: 18px;
+}
+.active {
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(30,29,29,1)),color-stop(21%,rgba(56,55,55,1)));
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+}
+.settingList {
+        padding:5px;font-size:18px;
+	background: #f9f9f9;
+	color: #000;
+	text-shadow: 0 1px 1px #fff;
+}
+.ui-header{
+border-width: 0px !important;
+border-style: none !important;
+position: relative;
+}
